@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "samshteinman-angular"
+    }
+  },
+  "defaultProject": "samshteinman-angular",
+  "cli": {
+    "analytics": "01e2ed85-04af-476f-a923-c1128c7555d2"
+  }
 }
