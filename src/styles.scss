@@ -1,2 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~animate.css/animate.min"
+
+.content-container
+{
+background-color: #ebebeb;
+}
+
+.content
+{
+  border-radius: 25px;
+  padding: 25px;
+margin: 25px;
+  border: 2px solid #d6d6d6;
+	height: 90%;
+	width: 90%;
+}
+
+hr
+{
+border-top: 1px solid #c0c0c0
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: left;
+}
+
+.me
+{
+display: inline;
+}
