@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Brand } from './models/brand';
+import { BrandsService } from './services/brands.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'samshteinman-angular';
+  brands$: Observable<Brand[]>;
 
+  constructor(private brandsService: BrandsService) {
+    this.brands$ = brandsService.getBrands();
+  }
 }

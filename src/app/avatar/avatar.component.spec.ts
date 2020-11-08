@@ -22,4 +22,8 @@ describe('AvatarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have an image', () => {
+    expect(fixture.nativeElement.querySelector('img')).toBeTruthy()
+  });
 });

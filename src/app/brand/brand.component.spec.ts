@@ -22,4 +22,9 @@ describe('BrandComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a url link and image', () => {
+    expect(fixture.nativeElement.querySelector('a')).toBeTruthy()
+    expect(fixture.nativeElement.querySelector('img')).toBeTruthy()
+  });
 });

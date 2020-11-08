@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BrandComponent implements OnInit {
   @Input() destinationUrl : string;
-  @Input() brandPicturePath : string;
+  @Input() picturePath : string;
 
   constructor() { }
 
