@@ -6,6 +6,7 @@ import { AvatarComponent } from  './avatar/avatar.component';
 import { BrandComponent } from  './brand/brand.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MySelectComponent } from './my-select/my-select.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MySelectComponent } from './my-select/my-select.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

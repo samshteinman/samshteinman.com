@@ -1,9 +1,0 @@
-<div ngbDropdown class="d-inline-block">
-    
-    <button *ngIf="!selection" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
-    <button *ngIf="selection" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{selection.display}}</button>
-    
-    <div ngbDropdownMenu class="mt-2">
-      <button *ngFor="let option of options" ngbDropdownItem (click)="onSelectionChanged(option)">{{option.display}}</button>
-    </div>
-</div>
