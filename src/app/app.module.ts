@@ -5,20 +5,27 @@ import { AppComponent } from './app.component';
 import { AvatarComponent } from  './avatar/avatar.component';
 import { BrandComponent } from  './brand/brand.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MySelectComponent } from './my-select/my-select.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
+const MATERIAL = [
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule
+]
 @NgModule({
   declarations: [
     AppComponent,
     AvatarComponent,
-    BrandComponent,
-    MySelectComponent
+    BrandComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ...MATERIAL
   ],
   providers: [],
   bootstrap: [AppComponent]
