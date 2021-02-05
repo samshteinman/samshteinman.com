@@ -9,9 +9,9 @@ import { BrandsService } from './services/brands.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  brands$: Observable<Brand[]>;
+  brands: Brand[];
 
   constructor(private brandsService: BrandsService) {
-    this.brands$ = brandsService.getBrands();
+    this.brands = brandsService.getBrands();
   }
 }

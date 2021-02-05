@@ -1,16 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~animate.css/animate.min";
+@import '~bootstrap/scss/bootstrap';
 
 html, body {
   height: 100%;
 }
 
 body {
-  background: lightgray
-}
-
-.content-container {
-  background-color: #ebebeb;
+  background-color: #694966 !important;
 }
 
 .content {
@@ -36,8 +33,8 @@ border-top: 1px solid #c0c0c0
 .me {
   display: inline;
 }
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-drawer-container {
+  background-color: transparent;
+  height: 100%;
+}

@@ -1,3 +1,23 @@
 .center {
     text-align: center;
 }
+
+mat-toolbar {
+    background-color: #5C415D;
+    border-bottom: black solid 1px;
+    //box-shadow: 0 0 10px;
+}
+
+.sidenav {
+    background-color: #212845;
+}
+
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+}
