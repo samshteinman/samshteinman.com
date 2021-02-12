@@ -1,12 +1,17 @@
 <nav>
   <mat-toolbar>
+    <div>
       <img src="assets/mypic.png" class="avatar"/>
       <span class="ml-3">Sam Shteinman</span>
+    </div>
+      
+    <div>
+      <app-brand class="ml-2 mr-2" *ngFor="let brand of brands" [picturePath]="brand.picturePath" [destinationUrl]="brand.destinationUrl"></app-brand>
+    </div>
+
   </mat-toolbar>
 </nav>
 
 <main>
-  <div class="center animate__animated animate__lightSpeedInRight">
-    <app-brand *ngFor="let brand of brands" [picturePath]="brand.picturePath" [destinationUrl]="brand.destinationUrl"></app-brand>
-  </div>
+  
 </main>
