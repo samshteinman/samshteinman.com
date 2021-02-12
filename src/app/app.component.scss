@@ -3,10 +3,12 @@
 }
 
 mat-toolbar {
-    background-color: #5C415D;
-    box-shadow: 0 0 5px black;
+    background: #2980b9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
     justify-content: space-between;
-    z-index: 1;
 }
 
 .spacer {
@@ -25,8 +27,4 @@ mat-toolbar {
     border-radius: 50%;
     border: 2px solid #ffffff;
     box-shadow:  0 0 10px  rgba(0,0,0,0.6);
-}
-
-main {
-    z-index: 0;
 }
