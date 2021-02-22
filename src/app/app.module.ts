@@ -6,26 +6,21 @@ import { AvatarComponent } from  './avatar/avatar.component';
 import { BrandComponent } from  './brand/brand.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
+import { HeaderNavComponent } from './header-nav/header-nav.component';
+import { SharedModule } from './shared/shared.module';
 
-const MATERIAL = [
-  MatToolbarModule,
-  MatIconModule,
-  MatButtonModule
-]
 @NgModule({
   declarations: [
     AppComponent,
     AvatarComponent,
-    BrandComponent
+    BrandComponent,
+    HeaderNavComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     BrowserAnimationsModule,
-    ...MATERIAL
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

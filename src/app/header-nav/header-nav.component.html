@@ -1,0 +1,12 @@
+<nav>
+    <mat-toolbar>
+      <a routerLink="/">
+        <img src="assets/mypic.png" class="avatar"/>
+        <span class="ml-3" style="opacity:0.7;">Sam Shteinman</span>
+      </a>
+        
+      <div>
+        <app-brand class="ml-2 mr-2" *ngFor="let brand of brands" [picturePath]="brand.picturePath" [destinationUrl]="brand.destinationUrl"></app-brand>
+      </div>
+    </mat-toolbar>
+  </nav>
