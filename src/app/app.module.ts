@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AvatarComponent } from  './avatar/avatar.component';
 import { BrandComponent } from  './brand/brand.component';
 import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -24,7 +23,6 @@ const MATERIAL = [
 @NgModule({
   declarations: [
     AppComponent,
-    AvatarComponent,
     BrandComponent,
     HeaderNavComponent,
     HomeComponent,
