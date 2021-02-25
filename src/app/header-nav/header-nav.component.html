@@ -1,10 +1,19 @@
 <nav>
     <mat-toolbar>
-      <span routerLink="/">
+      <span class="clickable" routerLink="/" routerLinkActive="active">
         <img src="assets/mypic.png" class="avatar"/>
-        <span class="ml-3" style="opacity:0.7;">Sam Shteinman</span>
+        <span class="ml-3">Sam Shteinman</span>
       </span>
         
+      <div>
+        <span class="p-2 clickable" routerLinkActive="active" routerLink="/music">
+          <mat-icon>library_music</mat-icon>
+          My Music</span>
+        <span class="p-2 clickable" routerLinkActive="active" routerLink="/blog">
+          <mat-icon>speaker_notes</mat-icon>
+          Blog</span>
+      </div>
+
       <div>
         <app-brand class="ml-2 mr-2" *ngFor="let brand of brands" [picturePath]="brand.picturePath" [destinationUrl]="brand.destinationUrl"></app-brand>
       </div>
